@@ -1,0 +1,25 @@
+{
+  "name": "etcd-seed",
+  "version": "0.0.0",
+  "description": "Seed etcd databases from configuration",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cake test"
+  },
+  "keywords": [
+    "etcd",
+    "seed"
+  ],
+  "author": "Jon Morehouse <morehousej09@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "test-bootstrap": "git://github.com/jonmorehouse/node-test-bootstrap.git"
+  },
+  "dependencies": {
+    "multi-config": "git://github.com/jonmorehouse/node-multi-config",
+    "node-etcd": "^2.1.1"
+  }
+}
