@@ -1,5 +1,5 @@
 # Etcd Seed
-> Load etcd configuration from files
+> Load etcd data from configuration files via command line
 
 ## Installation
 
