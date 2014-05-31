@@ -15,6 +15,6 @@ parseFilepaths = (filepaths) ->
 
 module.exports = 
   parseFilepaths: parseFilepaths
-  help: help
+  help: require "./help"
 
 

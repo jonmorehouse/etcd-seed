@@ -1,8 +1,10 @@
+integrationKey = "integration"
+intKey="asfd"
+
 [integration]
 key = "value"
 
   [integration.subdir]
-    key = "value"
+  key = "value"
 
-integrationKey = "value"
 

@@ -20,7 +20,7 @@ module.exports = (obj, cb) ->
             keys.push ["#{dir}/#{key}", value]
           else
             keys.push [key, value]
-  
+
   # generate list of key tuples
   _ obj
   
