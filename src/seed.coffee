@@ -21,11 +21,10 @@ module.exports = (obj, cb) ->
           else
             keys.push [key, value]
   
-  # fill the keys array
-  _ obj, cb
+  # generate list of key tuples
+  _ obj
   
   # now set all keys accordingly
   async.each keys, ((k, cb) -> etcd.set k[0], k[1], cb), (err) ->
-
     cb?()
 

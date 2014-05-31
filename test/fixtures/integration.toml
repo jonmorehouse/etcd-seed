@@ -1,0 +1,8 @@
+[integration]
+key = "value"
+
+  [integration.subdir]
+    key = "value"
+
+integrationKey = "value"
+
