@@ -19,7 +19,12 @@
     "test-bootstrap": "git://github.com/jonmorehouse/node-test-bootstrap.git"
   },
   "dependencies": {
+    "async": "^0.8.0",
+    "coffeeson": "git://github.com/jonmorehouse/coffeeson",
+    "extend": "git://github.com/jonmorehouse/node-extend",
+    "js-yaml": "^3.0.2",
     "multi-config": "git://github.com/jonmorehouse/node-multi-config",
-    "node-etcd": "^2.1.1"
+    "node-etcd": "^2.1.1",
+    "toml": "^2.0.6"
   }
 }

@@ -1,11 +1,9 @@
 bs = require "test-bootstrap"
-mc = require 'multi-config'
 etcd = srcRequire 'etcd'
 
 module.exports = 
 
   setUp: (cb) ->
-
     etcd.set "key", "value", (err) ->
       cb?()
 

@@ -10,7 +10,6 @@ task "run", "Run server", ->
 
 task "test", "Test entire project", ->
 
-  bs.tasks.nodeunit "test/etcd_test.coffee"
-
+  bs.tasks.nodeunit()
 
 
