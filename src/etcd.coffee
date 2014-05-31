@@ -7,4 +7,3 @@ etcd = new Etcd mc.etcd.host, mc.etcd.port
 
 module.exports = etcd
 
-

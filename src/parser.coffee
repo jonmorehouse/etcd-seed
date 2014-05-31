@@ -4,6 +4,7 @@ yaml = require 'js-yaml'
 fs = require 'fs'
 async = require 'async'
 extend = require 'extend'
+toml = require 'toml'
 
 yamlLoader = (filepath, cb) ->
 
@@ -12,6 +13,16 @@ yamlLoader = (filepath, cb) ->
     cb? err if err?
     try
       obj = yaml.safeLoad str
+    catch err
+      return cb err
+    return cb null, obj
+
+tomlLoader = (filepath, cb) ->
+  
+  fs.readFile filepath, "utf-8", (err, str) ->
+    cb? err if err?
+    try
+      obj = toml.parse str
     catch err
       return cb err
     return cb null, obj

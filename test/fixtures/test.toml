@@ -1,0 +1,4 @@
+tomlKey = "value"
+
+[namespace]
+key = "value"
