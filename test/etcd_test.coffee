@@ -5,6 +5,7 @@ module.exports =
 
   setUp: (cb) ->
     etcd.set "key", "value", (err) ->
+      p err
       cb?()
 
   testClient: (test) ->

@@ -19,6 +19,19 @@ $ etcd-seed seed.toml seed.json seed.cson seed.yml
 * yaml http://www.yaml.org/
 * toml https://github.com/mojombo/toml
 
+## Hacking
 
+~~~ bash
+# mac
+$ brew tap jonmorehouse/tap
+$ brew install docker-osx
+$ docker-osx start
+$ eval `docker-osx env`
 
+# start etcd
+$ docker run -p 4001:4001 coreos/etcd --addr=$ETCD_HOST:$ETCD_POR
+
+# run tests
+$ cake test
+~~~
 
